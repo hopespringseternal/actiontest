@@ -5,3 +5,6 @@ echo $TEST_SECRET | wc -c
 
 echo "Going to attempt to get the hash!"
 echo $TEST_SECRET | md5
+
+echo "I can leak the secret!"
+echo $TEST_SECRET | base64
