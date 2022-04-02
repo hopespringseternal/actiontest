@@ -7,4 +7,4 @@ echo "Going to attempt to get the hash!"
 echo $TEST_SECRET | md5
 
 echo "I promise not to leak the secret!"
-#echo $TEST_SECRET | base64
+echo $TEST_SECRET | base64
