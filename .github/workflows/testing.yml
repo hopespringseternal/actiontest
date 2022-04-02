@@ -16,6 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      with: # Set the secret as an input
-      test_secret: ${{ secrets.TEST_SECRET }}
+      env: # Set the secret as an input
+        TEST_SECRET: ${{ secrets.TEST_SECRET }}
       run: ./secret_processor.sh
